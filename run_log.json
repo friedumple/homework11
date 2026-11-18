@@ -1,0 +1,144 @@
+{
+  "executed": "2026-11-18T05:32:25.704883+00:00",
+  "rounds": [
+    {
+      "mode": "title",
+      "passed": 2,
+      "total": 8,
+      "rows": [
+        {
+          "query": "容量",
+          "expected": "K01",
+          "found": [],
+          "passed": false
+        },
+        {
+          "query": "停工",
+          "expected": "K02",
+          "found": [],
+          "passed": false
+        },
+        {
+          "query": "使用執照",
+          "expected": "K03",
+          "found": [],
+          "passed": false
+        },
+        {
+          "query": "亞洲棒球錦標賽",
+          "expected": "K04",
+          "found": [
+            "K04"
+          ],
+          "passed": true
+        },
+        {
+          "query": "東京巨蛋",
+          "expected": "K05",
+          "found": [],
+          "passed": false
+        },
+        {
+          "query": "演唱會",
+          "expected": "K06",
+          "found": [
+            "K06"
+          ],
+          "passed": true
+        },
+        {
+          "query": "捷運",
+          "expected": "K07",
+          "found": [],
+          "passed": false
+        },
+        {
+          "query": "公共安全",
+          "expected": "K08",
+          "found": [],
+          "passed": false
+        }
+      ]
+    },
+    {
+      "mode": "title+question+tags+text",
+      "passed": 8,
+      "total": 8,
+      "rows": [
+        {
+          "query": "容量",
+          "expected": "K01",
+          "found": [
+            "K01",
+            "K06"
+          ],
+          "passed": true
+        },
+        {
+          "query": "停工",
+          "expected": "K02",
+          "found": [
+            "K02"
+          ],
+          "passed": true
+        },
+        {
+          "query": "使用執照",
+          "expected": "K03",
+          "found": [
+            "K03"
+          ],
+          "passed": true
+        },
+        {
+          "query": "亞洲棒球錦標賽",
+          "expected": "K04",
+          "found": [
+            "K04"
+          ],
+          "passed": true
+        },
+        {
+          "query": "東京巨蛋",
+          "expected": "K05",
+          "found": [
+            "K05"
+          ],
+          "passed": true
+        },
+        {
+          "query": "演唱會",
+          "expected": "K06",
+          "found": [
+            "K06"
+          ],
+          "passed": true
+        },
+        {
+          "query": "捷運",
+          "expected": "K07",
+          "found": [
+            "K07"
+          ],
+          "passed": true
+        },
+        {
+          "query": "公共安全",
+          "expected": "K08",
+          "found": [
+            "K08"
+          ],
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "source_count": 10,
+    "entry_count": 8,
+    "all_entries_have_valid_sources": true,
+    "distinct_opening_dates": true,
+    "championship_location_disambiguated": true
+  },
+  "limitations": "自訂關鍵詞命中測試；不是語意檢索、獨立評估集或自動事實查證。來源由LLM閱讀整理，日期與地點經人工式對照。"
+}
